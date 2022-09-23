@@ -71,6 +71,7 @@ const [brokenclouds, setBrokenclouds] = useState("./images/broken-clouds.jpg");
 const [overcastclouds, setOvercastclouds] = useState("./images/overcast-clouds.jpg")
 const [fewclouds, setFewclouds] = useState("./images/few-clouds.jpg")
 const [clearsky, setClearsky] = useState("./images/Clear-Sky.jpg")
+const [rain, setRain] = useState("./images/rain.jpg")
 
 
 useEffect(() => {
@@ -82,6 +83,8 @@ useEffect(() => {
         setIconImage(fewclouds)
       } else if (Info?.weather[0].description === "Clear Sky") {
         setIconImage(clearsky)
+      } else if (Info?.weather[0].description === "rain") {
+        setIconImage(rain)
       }
 
 },[Info])
