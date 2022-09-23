@@ -100,21 +100,36 @@ const iconLogo = Info?.weather[0].icon;
   
   console.log(iconImage); //This is to validate that the info is coming.
 
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <div className="App" style={{backgroundImage: `url(${iconImage})`}}>
-      <Loader/>
-      <CardWeather
-        info = {Info}
-        iconImage = {iconImage}
-        temp = {temp}
-        letter = {letter}
-        changetemp = {changetemp}
-        humidity = {humidity}
-        typeofweather = {typeofweather}
-        city = {city}
-        country = {country}
-        iconLogo = {iconLogo}
-      />
+    <div>
+    {loading ? (
+        <div className="loader-container">
+      	  <div className="spinner"></div>
+        </div>
+      ) : (
+      <div className="App" style={{backgroundImage: `url(${iconImage})`}}>
+        <CardWeather
+          info = {Info}
+          iconImage = {iconImage}
+          temp = {temp}
+          letter = {letter}
+          changetemp = {changetemp}
+          humidity = {humidity}
+          typeofweather = {typeofweather}
+          city = {city}
+          country = {country}
+          iconLogo = {iconLogo}
+        />
+      </div>
+      )}
     </div>
   )
 }
