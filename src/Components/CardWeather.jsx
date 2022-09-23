@@ -5,7 +5,7 @@ import  { useEffect, useState, React } from 'react'
 
 
 
-const CardWeather = ({Info, iconImage, temp, letter, changetemp, humidity, typeofweather, city, country}) => {
+const CardWeather = ({Info, iconImage, temp, letter, changetemp, humidity, typeofweather, city, country, iconLogo}) => {
 
 
 
@@ -15,7 +15,7 @@ const CardWeather = ({Info, iconImage, temp, letter, changetemp, humidity, typeo
         <h1>Weather app</h1>
         <h4 className='city'>{`${city}, ${country}`}</h4>
         <div className='iconandinfo'>
-          <img className='icon' src={`${iconImage}`} alt="Loading..." /> 
+          <img className='icon' src={`https://openweathermap.org/img/wn/${iconLogo}@2x.png`} alt="Loading..." /> 
           <ul className='info'>
             <li className='typeofweather'>{`${typeofweather}`}</li>
             <li className='humidity'><span>Humidity:</span> {`${humidity}%`}</li>

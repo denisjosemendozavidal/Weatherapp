@@ -50,6 +50,7 @@ li {
         height: 80%;
         width: 80%;
         border-radius: 20px;
+        box-shadow: 3px 3px 10px #0009;
       }
 
       .info {

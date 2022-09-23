@@ -94,7 +94,7 @@ const humidity = Info?.main.humidity;
 const typeofweather = Info?.weather[0].description;
 const city = Info?.name;
 const country = Info?.sys.country;
-
+const iconLogo = Info?.weather[0].icon;
   
   console.log(iconImage); //This is to validate that the info is coming.
 
@@ -110,6 +110,7 @@ const country = Info?.sys.country;
         typeofweather = {typeofweather}
         city = {city}
         country = {country}
+        iconLogo = {iconLogo}
       />
     </div>
   )
