@@ -2,8 +2,8 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <article>
-        
+    <article className="loader">
+      
     </article>
   )
 }

@@ -8,6 +8,12 @@ li {
   list-style: none;
 }
 
+/*Loader*/
+
+
+
+/*Loader ends here*/
+
 .App {
   display: flex;
   justify-content: center;
@@ -48,7 +54,7 @@ li {
       .icon {
         align-self: center;
         height: 80%;
-        width: 80%;
+        width: 45%;
         border-radius: 20px;
         box-shadow: 3px 3px 10px #0009;
       }
@@ -58,6 +64,8 @@ li {
         flex-direction: column;
         justify-content: space-evenly;
         height: 100%;
+        width: 45%;
+        color: blue;
       }
 
     .button {
@@ -123,6 +131,7 @@ li {
         align-content: center;
         justify-content: space-evenly;
         height: 100%;
+        width: 90%;
       }
 
     .button {

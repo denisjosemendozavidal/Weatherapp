@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import './App.css'
 import CardWeather from './Components/CardWeather'
+import Loader from './Components/Loader'
 
 function App() {
 
@@ -72,6 +73,7 @@ const [overcastclouds, setOvercastclouds] = useState("./images/overcast-clouds.j
 const [fewclouds, setFewclouds] = useState("./images/few-clouds.jpg")
 const [clearsky, setClearsky] = useState("./images/Clear-Sky.jpg")
 const [rain, setRain] = useState("./images/rain.jpg")
+const [alltype, setAlltype] = useState("./images/alltypeofweather.jpg")
 
 
 useEffect(() => {
@@ -85,7 +87,7 @@ useEffect(() => {
         setIconImage(clearsky)
       } else if (Info?.weather[0].description === "rain") {
         setIconImage(rain)
-      }
+      } else {setIconImage(alltype)}
 
 },[Info])
 
@@ -100,6 +102,7 @@ const iconLogo = Info?.weather[0].icon;
 
   return (
     <div className="App" style={{backgroundImage: `url(${iconImage})`}}>
+      <Loader/>
       <CardWeather
         info = {Info}
         iconImage = {iconImage}
