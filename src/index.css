@@ -17,6 +17,7 @@ li {
   height: 100vh;
   background-color: lightblue;
   margin-top: 0;
+  
 }  
 
   .card {
@@ -44,6 +45,9 @@ li {
 
       .icon {
         align-self: center;
+        height: 80%;
+        width: 80%;
+        border-radius: 20px;
       }
 
       .info {
