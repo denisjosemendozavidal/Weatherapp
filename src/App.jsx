@@ -74,7 +74,7 @@ const [fewclouds, setFewclouds] = useState("./images/few-clouds.jpg")
 const [clearsky, setClearsky] = useState("./images/Clear-Sky.jpg")
 const [rain, setRain] = useState("./images/rain.jpg")
 const [alltype, setAlltype] = useState("./images/alltypeofweather.jpg")
-
+const [scatteredclouds, setScatteredclouds] = useState("./images/scattered-clouds.jpg")
 
 useEffect(() => {
       if (Info?.weather[0].description === "broken clouds") {
@@ -87,6 +87,8 @@ useEffect(() => {
         setIconImage(clearsky)
       } else if (Info?.weather[0].description === "rain") {
         setIconImage(rain)
+      } else if (Info?.weather[0].description === "scattered clouds") {
+        setIconImage(scatteredclouds)
       } else {setIconImage(alltype)}
 
 },[Info])
@@ -98,7 +100,7 @@ const city = Info?.name;
 const country = Info?.sys.country;
 const iconLogo = Info?.weather[0].icon;
   
-  console.log(iconImage); //This is to validate that the info is coming.
+  //console.log(iconLogo); //This is to validate that the info is coming.
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
