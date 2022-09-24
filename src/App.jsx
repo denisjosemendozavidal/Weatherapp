@@ -40,12 +40,12 @@ useEffect (() => {
   }
 }, [location])
 
+/*Rendering the temp*/ 
+
 const tempC = Info?.main.temp - 273.15;
 const tempF = (tempC * 9/5) + 32; 
 const F = "°F";
 const C = "°C";
-
-/*Rendering the temp*/ 
 
 const [istrue, setIstrue] = useState();
 const [temp, setTemp] = useState("Click bellow to see the temperature");
@@ -111,7 +111,9 @@ const city = Info?.name;
 const country = Info?.sys.country;
 const iconLogo = Info?.weather[0].icon;
   
-  //console.log(iconLogo); //This is to validate that the info is coming.
+  
+
+  /*Loader*/ 
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
