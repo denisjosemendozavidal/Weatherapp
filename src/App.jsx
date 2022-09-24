@@ -56,10 +56,10 @@ const changetemp = () => {
   setIstrue(!istrue)
 
   if (istrue) {
-    setTemp (tempC.toFixed(2))
+    setTemp (tempC.toFixed(0))
     setLetter (C)
   } else {
-    setTemp (tempF.toFixed(2))
+    setTemp (tempF.toFixed(0))
     setLetter(F)
   }
 }
