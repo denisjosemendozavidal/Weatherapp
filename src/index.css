@@ -19,6 +19,11 @@ li {
   position: fixed;
   background: rgba(0, 0, 0, 0.834);
   z-index: 1;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  gap: 5%;
+  padding: 5%;
 }
 
 .spinner {

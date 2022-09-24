@@ -127,9 +127,11 @@ const iconLogo = Info?.weather[0].icon;
 
   return (
     <div>
-    {loading ? (
+    {!Info ? (
         <div className="loader-container">
       	  <div className="spinner"></div>
+          <h1>Loading...</h1>
+          <p> If this is taking too long it might be because your location is not enabled, if you feel that is not the case then it might be something else not working properly, please reload the page, if that does not work, please come back later!</p>
         </div>
       ) : (
       <div className="App" style={{backgroundImage: `url(${iconImage})`}}>
