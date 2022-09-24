@@ -73,7 +73,7 @@ li {
     height: 500px;
     border-radius: 3rem;
     box-shadow: 3px 3px 10px #0009;
-    background: transparent;
+    background-color: rgba(0,0,0,0.1);
   }
 
     .wa {
@@ -104,7 +104,7 @@ li {
         width: 45%;
         border-radius: 20px;
         box-shadow: 3px 3px 10px #0109;
-        background: transparent;
+        background-color: rgba(0,0,0,0.2);
       }
 
       .info {
@@ -125,6 +125,7 @@ li {
       background-color: lightblue;
       font-family: verdana;
       font-size: large;
+      transition: 1s ease-in-out
     }
 
       .button:hover {
