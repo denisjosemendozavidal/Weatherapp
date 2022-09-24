@@ -12,7 +12,7 @@ const CardWeather = ({Info, iconImage, temp, letter, changetemp, humidity, typeo
 
   return (
     <article className='card'>
-        <h1>Weather app</h1>
+        <h1 className='wa'>Weather app</h1>
         <h4 className='city'>{`${city}, ${country}`}</h4>
         <div className='iconandinfo'>
           <img className='icon' src={`https://openweathermap.org/img/wn/${iconLogo}@2x.png`} alt="Loading..." /> 
