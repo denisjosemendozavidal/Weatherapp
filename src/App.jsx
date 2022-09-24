@@ -120,8 +120,10 @@ const iconLogo = Info?.weather[0].icon;
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
+
+  /*Return*/ 
 
   return (
     <div>
