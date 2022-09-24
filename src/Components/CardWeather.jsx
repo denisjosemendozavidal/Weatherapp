@@ -15,7 +15,7 @@ const CardWeather = ({Info, iconImage, temp, letter, changetemp, humidity, typeo
         <h1 className='wa'>Weather app</h1>
         <h4 className='city'>{`${city}, ${country}`}</h4>
         <div className='iconandinfo'>
-          <img className='icon' src={`https://openweathermap.org/img/wn/${iconLogo}@2x.png`} alt="Loading..." /> 
+          <img className='icon' src={`https://openweathermap.org/img/wn/${iconLogo}@2x.png`} alt="Loading... Please refresh" /> 
           <ul className='info'>
             <li className='typeofweather'>{`${typeofweather}`}</li>
             <li className='humidity'><span>Humidity:</span> {`${humidity}%`}</li>
