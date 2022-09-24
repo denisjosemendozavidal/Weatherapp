@@ -75,6 +75,9 @@ const [clearsky, setClearsky] = useState("./images/Clear-Sky.jpg")
 const [rain, setRain] = useState("./images/rain.jpg")
 const [alltype, setAlltype] = useState("./images/alltypeofweather.jpg")
 const [scatteredclouds, setScatteredclouds] = useState("./images/scattered-clouds.jpg")
+const [thunderstorm, setThunderstorm] = useState("./images/thunderstorm.jpg")
+const [snow, setSnow] = useState("./images/snow.jpg")
+const [mist, setmist] = useState("./images/mist.jpg")
 
 useEffect(() => {
       if (Info?.weather[0].description === "broken clouds") {
@@ -87,8 +90,16 @@ useEffect(() => {
         setIconImage(clearsky)
       } else if (Info?.weather[0].description === "rain") {
         setIconImage(rain)
+      } else if (Info?.weather[0].description === "shower rain") {
+        setIconImage(rain)
       } else if (Info?.weather[0].description === "scattered clouds") {
         setIconImage(scatteredclouds)
+      } else if (Info?.weather[0].description === "thunderstorm") {
+        setIconImage(thunderstorm)
+      } else if (Info?.weather[0].description === "snow") {
+        setIconImage(snow)
+      } else if (Info?.weather[0].description === "mist") {
+        setIconImage(mist)
       } else {setIconImage(alltype)}
 
 },[Info])
