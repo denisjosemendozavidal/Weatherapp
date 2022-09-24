@@ -113,7 +113,7 @@ const iconLogo = Info?.weather[0].icon;
   
   
 
-  /*Loader*/ 
+  /*Loader, currently not using this part of code*/ 
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
