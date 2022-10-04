@@ -1,5 +1,7 @@
 Weather App
 
+Link https://denis-mendoza-apiusage.netlify.app/
+
 Welcome to this Weather app, developed using React.js. With this readme I intend to mention the idea behind it, the structure and give credits to any external website or library used for this. To start with this, this project is a weather app that renders weather information based on users location, the API gets that location only once the user allows it, if that clearance is never given, the app does not move past the loading page. The goal behind completing this project was understanding how asynchronous requests and  REST APIs work while customizing that rendering to users location. 
 
 The idea behind it was for me to master REST API consumption using axios, for that I used  this https://openweathermap.org/api open API for weather information, went into the documentation for Current Weather data, pulled the end point and started working on it. Ended up creating several states, but the main two were  a state for the gathered data using axios and the get verb, then with that state I navigated and rendered the rest of the data and a state to gather the location of the user, these two are the foundations on which this app was built. 
